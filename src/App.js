@@ -1,15 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
+import { Provider } from 'mobx-react'
+
+import Home from './page/Home'
+import Page from './page/Page'
+import stores from './store/common/index'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-       111111
-      </div>
-    );
+      <Provider store={stores}>
+        <div className="App">
+          <Home />
+          <Page />
+        </div>
+      </Provider>
+    )
   }
 }
 
-export default App;
+export default App
