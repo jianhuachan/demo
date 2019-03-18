@@ -1,16 +1,13 @@
 import { observable, action } from 'mobx'
-// import { observer } from 'mobx-react'
 
-
-// @observer
 class Store {
   @observable count = 1
 
-  @action add = () => {
-    this.count += 1
+  @action add = price => {
+    this.count += price
   }
 }
 
-const stores = new Store()
+const storesA = new Store()
 
-export default stores
+export default storesA

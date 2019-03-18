@@ -2,24 +2,21 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { observer, inject } from 'mobx-react'
 
-@inject('store')
+@inject('stores')
 @observer
-class Home extends Component {
+class Top extends Component {
   static propTypes = {
-    store: PropTypes.object.isRequired
+    stores: PropTypes.object.isRequired
   }
 
   render() {
-    const { store } = this.props
+    const { storeA } = this.props.stores
     return (
       <div>
-        <p>
-          数量：
-          {store.count}
-        </p>
+        <p> 数量： {storeA.count}</p>
       </div>
     )
   }
 }
 
-export default Home
+export default Top

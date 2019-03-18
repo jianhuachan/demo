@@ -1,22 +1,27 @@
-import React, { Component } from 'react'
-import './App.css'
+import React from 'react'
+import { HashRouter as Router, Switch } from 'react-router-dom'
+import { renderRoutes } from 'react-router-config'
 import { Provider } from 'mobx-react'
 
-import Home from './page/Home'
-import Page from './page/Page'
-import stores from './store/common/index'
+import './App.css'
+import routes from './routes'
 
-class App extends Component {
-  render() {
-    return (
-      <Provider store={stores}>
-        <div className="App">
-          <Home />
-          <Page />
-        </div>
+import stores from './store'
+
+// interface store {
+//   stores: object
+// }
+
+function App() {
+  return (
+    <div className="App">
+      <Provider stores={stores}>
+        <Router>
+          <Switch>{renderRoutes(routes)}</Switch>
+        </Router>
       </Provider>
-    )
-  }
+    </div>
+  )
 }
 
 export default App
