@@ -1,0 +1,8 @@
+.test .input-number {
+  display: inline-block
+}
+  
+.test .test-number {
+  position: relative;
+  left: -50px
+}

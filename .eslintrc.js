@@ -69,5 +69,6 @@ module.exports = {
     'react/require-default-props': 0, // prop type 必须设置require默认值
     'prefer-destructuring': 0, // 必须解构赋值
     "eol-last": 2, // 文件末尾强制换行
+    "react/no-string-refs": 0
   }
 }
