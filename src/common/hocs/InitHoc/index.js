@@ -10,8 +10,10 @@ const InitHoc = Comp =>
 
     componentDidMount = () => {
       setTimeout(() => {
-        this.setState({ isLoading: false })
-      }, 5000)
+        this.setState({
+          isLoading: false
+        })
+      }, 1000)
     }
 
     render() {

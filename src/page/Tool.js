@@ -9,6 +9,18 @@ const Tool = props => (
     <button type="button" onClick={() => props.history.push('page1')}>
       分页1
     </button>
+    <button type="button" onClick={() => props.history.push('testMaxNumber')}>
+      maxNumber
+    </button>
+    <button type="button" onClick={() => props.history.push('fabric')}>
+      fabric
+    </button>
+    <button type="button" onClick={() => props.history.push('fabricTest')}>
+      fabricTest
+    </button>
+    <button type="button" onClick={() => props.history.push('simpleDrag')}>
+      simpleDrag
+    </button>
   </div>
 )
 
