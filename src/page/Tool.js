@@ -21,6 +21,9 @@ const Tool = props => (
     <button type="button" onClick={() => props.history.push('simpleDrag')}>
       simpleDrag
     </button>
+    <button type="button" onClick={() => props.history.push('JestTest')}>
+      JestTest
+    </button>
   </div>
 )
 

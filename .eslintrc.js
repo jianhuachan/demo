@@ -12,7 +12,8 @@ module.exports = {
     // 下面的配置指定解析环境
     browser: true,
     node: true,
-    es6: true
+    es6: true,
+    jest: true
   },
   // https://github.com/airbnb/javascript
   // 此项用来配置airbnb的js风格
@@ -31,6 +32,11 @@ module.exports = {
         extensions: ['.ts', '.js', '.jsx', '.json', '.less', '.jpg', '.png']
       }
     }
+  },
+  "globals": {
+    "document": true,
+    "localStorage": true,
+    "window": true,
   },
   // add your custom rules here
   // 下面这些rules是用来设置从插件来的规范代码的规则，使用必须去掉前缀eslint-plugin
@@ -69,6 +75,7 @@ module.exports = {
     'react/require-default-props': 0, // prop type 必须设置require默认值
     'prefer-destructuring': 0, // 必须解构赋值
     "eol-last": 2, // 文件末尾强制换行
-    "react/no-string-refs": 0
+    "react/no-string-refs": 0,
+    "import/no-extraneous-dependencies": 0
   }
 }

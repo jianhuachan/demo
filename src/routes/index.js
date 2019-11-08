@@ -17,8 +17,8 @@ const routes = [{
   component: asyncLoad(() => import('../page/SimpleDrag')),
   path: '/simpleDrag'
 }, {
-  component: asyncLoad(() => import('../page/FabricTest')),
-  path: '/fabricTest'
+  component: asyncLoad(() => import('../page/JestTest')),
+  path: '/JestTest'
 }, {
   component: asyncLoad(() => import('../page/noData')),
 }]
